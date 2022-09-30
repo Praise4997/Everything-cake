@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --black: #1B1722;
+    --white: #F0F0F0;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--white);
+    border-radius: 5rem;
+}
+
+.nav-link{
+    line-height: normal;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: var(--black);
+}
+
+.navbar-nav > li{
+    padding-left: 1em;
+    padding: 0.5em;
+}
+
+.navbar-brand{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+ul{
+    justify-content: space-around;
+}
+
+.navbar{
+    background: var(--white);
+    padding: 10px 100px;
+    box-shadow: var(--box-shadow);
+}
+
+#success{
+    border: 0.5px solid var(--black);
+    color: var(--black);
+}
+
+#success:hover{
+    background-color: var(--black);
+    color: white;
+}
+
+/* navbar ends */
+
+/* home section */
+
+.home{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: url(./anthony-espinosa-6iqpLKqeaE0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    isolation: isolate;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--white);
+    /* background: rgb(141, 90, 90); */
+    z-index: -1;
+    opacity: .4;
+}
+
+.home .homeContent{
+    background: transparent;
+    width: 60%;
+    float: left;
+    padding: 4rem;
+    text-align: center;
+}
+
+.home .homeContent h2{
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+
+.home .homeContent p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    text-transform: none;
+    margin-bottom: 2rem;
+}
+
+.home .homeContent .home-btn{
+    height: 3rem;
+}
+
+.home .homeContent .home-btn button{
+    font-size: 1.2rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+
+.home .homeContent .home-btn button:hover{
+    font-size: 1.3rem;
+}
+
+/* product section */
+
+.product{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+
+.heading h2{
+    margin-top: 1rem;
+}
+
+.product .product-row{
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.product .product-row .box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    width: fit-content;
+    border-radius: 3rem;
+}
+
+.product .product-row .img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.product .product-row .img img:hover{
+    transform: scale(1.1);
+}
+
+.product .product-row .product-content{
+    margin-bottom: 4rem;
+}
+
+.product .product-row .product-content h3{
+    font-size: 2.1rem;
+    color: var(--black);
+}
+
+.product .product-row .product-content p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+.product .product-row .product-content .orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.product .product-row .product-content .orderNow button{
+    font-size: 1.1rem;
+    background: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+
+.product .product-row .product-content .orderNow button:hover{
+    font-size: 1.2rem;
+}
+
+/* swiper */
+.swiper-pagination-bullet{
+    background-color: var(--black);
+}
+
+/* blogs section */
+.blogs .blogs-row .box{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    flex-wrap: wrap;
+}
+
+.blogs{
+    background: url(./annie-spratt-pKpipZVVEC0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem 7%;
+    position: relative;
+    isolation: isolate;
+}
+
+.blogs::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: #ece2e2;
+    z-index: -1;
+    opacity: .5;
+}
+
+.blogs .blogs-row .box .img{
+    flex: 50%;
+}
+
+.blogs .blogs-row .box .img img{
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    padding: 2rem;
+}
+
+.blogs .blogs-row .box .content{
+    flex: 50%;
+    padding: 2rem;
+}
+
+.blogs .blogs-row .box .content h3{
+    font-size: 1.4rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+
+.blogs .blogs-row .box .content p{
+    font-size: 1rem;
+    color: var(--black);
+    padding-top: 1rem;
+    line-height: 1.8;
+}
+
+.blogs .blogs-row .box .content a {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.blogs .blogs-row .box .content a:hover{
+    text-shadow: var(--box-shadow);
+}
+
+/* newsletter */
+.newsletter{
+    padding: 2rem 7%;
+    background: url(./anthony-espinosa-6iqpLKqeaE0-unsplash.jpg) no-repeat;
+    background-color: var(--white);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.newsletter::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: var(--white);
+    z-index: -1;
+    opacity: .3;
+}
+
+.newsletter form{
+    max-width: 45rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.newsletter form h3{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+    padding-bottom: .7rem;
+}
+
+.newsletter form .box{
+    width: 100%;
+    margin: .7rem 1rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.newsletter form .box2{
+    width: 30%;
+    padding: .5rem;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.newsletter form .box2:hover{
+    font-size: 1.3rem;
+}
+
+.newsletter::after{
+    opacity: .4;
+}
+
+/* review section */
+
+.review{
+    padding: 2rem 7%;
+}
+
+.review .review-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review .review-row .box{
+    width: 50%;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    color: var(--black);
+    padding: 3rem;
+    border-radius: 3rem;
+}
+.review .review-row .box .client-info{
+    display: flex;
+    align-items: center;
+}
+
+.review .review-row .box .client-review{
+    margin-bottom: 3rem;
+}
+
+.review .review-row .box .client-review p{
+    text-align: center;
+    font-size: 1rem;
+    text-transform: none;
+    line-height: 1.5;
+}
+
+.review .review-row .box .client-info .img{
+    padding-right: 3rem;
+}
+
+.review .review-row .box .client-info .img img{
+    width: 6rem;
+    height: 6rem;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.review .review-row .box .client-info .clientName h3{
+   font-size: 1.5rem ;
+}
+
+.review .review-row .box .client-info .clientName p{
+    font-size: 1rem;
+}
+
+/* footer */
+
+.footer{
+    padding: 2rem 7%;
+    background: url(./anthony-espinosa-6iqpLKqeaE0-unsplash.jpg) no-repeat;
+    background-color: var(--white);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+.footer::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: var(--white);
+    z-index: -1;
+    opacity: .4;
+}
+
+.footer .content{
+    text-align: center;
+    text-shadow: var(--box-shadow);
+}
+
+.footer .content a{
+    display: block;
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.footer .content .navbar-brand{
+    margin-bottom: 1rem;
+}
+
+.footer .content p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.footer .content .girlintech{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer .content .girlintech:hover{
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1024px){
+   .home .homeContent{
+    width: 100%;
+    padding: 2rem;
+   }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 10px;
+    }
+
+    .home .homeContent h2{
+        line-height: normal;
+        font-size: 2.5rem;
+    }
+
+    .home .homeContent p{
+        line-height: 1.8;
+    }
+    .blogs .blogs-row .box .content h3{
+        font-size: 1.6rem;
+    }
+
+    .newsletter form h3{
+        font-size: 1.7rem;
+    }
+    .newsletter form .box2{
+        font-size: 1.1rem;
+    }
+    .newsletter form .box2:hover{
+        font-size: 1.2rem;
+    }
+}

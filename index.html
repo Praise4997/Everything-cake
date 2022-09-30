@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cake Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-cake-candles"></i>
+            Everything Cake
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button id="success" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- home section starts here -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Delicious Cake For Everyone</h2>
+            <p>Your taste bud feels so good whenever you have a 
+                bite of our delicious cakes and it keeps asking for more.
+            </p>
+            <div class="home-btn">
+                <a href="#"><button>See more</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- Product section starts here -->
+
+    <section class="product" id="product">
+      <div class="heading">
+        <h2>Our Exclusive Products</h2>
+      </div>
+      <div class="swiper product-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./jacob-thomas-6jHpcBPw7i8-unsplash.jpg" alt="">
+            </div>
+            <div class="product-content">
+              <h3>Chocolate</h3>
+              <p>Our Exclusive and Super delicious Chocolate Cakes.</p>
+              <div class="orderNow">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./cupcakes-2250367__480.jpg" alt="">
+            </div>
+            <div class="product-content">
+              <h3>Dessert</h3>
+              <p>Our Exclusive and delicious food dessert Cakes.</p>
+              <div class="orderNow">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./cake-pops-684163__480.jpg" alt="">
+            </div>
+            <div class="product-content">
+              <h3>Parfait</h3>
+              <p>Our Exclusive, yummy and delicious Cake Parfaits.</p>
+              <div class="orderNow">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./valentine-3925930__480.jpg" alt="">
+            </div>
+            <div class="product-content">
+              <h3>Valentine</h3>
+              <p>Our Exclusive and delicious special valentine Cakes.</p>
+              <div class="orderNow">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./wedding-cake-5373757__480.jpg" alt="">
+            </div>
+            <div class="product-content">
+              <h3>Birthday</h3>
+              <p>Our Exclusive and Super delicious Birthday Cakes.</p>
+              <div class="orderNow">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    
+    <!-- Product section ends here -->
+    
+    <!-- blog section starts here -->
+    <section class="blogs" id="blogs">
+      <div class="swiper blogs-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./cupcakes-1283247__480.jpg" alt="">
+            </div>
+            <div class="content">
+              <h3>Caramel Bourbon Cupcakes</h3>
+              <p>our Cupcakes are so special because they are made 
+                by the best. we are not just particular about taste 
+                only but also the wellbeing of our consumers.
+              </p>
+              <a href="#blogs" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./doughnut-5557499__480.jpg" alt="">
+            </div>
+            <div class="content">
+              <h3>Doughnut Candy Cake</h3>
+              <p>Sweet Doughnut Candy Cake are a powerful and delicious
+                combination of doughnut with a layer of candy cakes that 
+                makes it so much more yummy.
+              </p>
+              <a href="#blogs" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./brooke-lark-4ELjpkrMpHg-unsplash_1.jpg" alt="">
+            </div>
+            <div class="content">
+              <h3>Caramel Angel Food Cake</h3>
+              <p>Caramel Angel food cake is a collection of Delicious
+                and nutritious food cakes that are both eye and also stomach
+                satisfying to all our consumers.
+              </p>
+              <a href="#blogs" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./strawberries-1353274__480.jpg" alt="">
+            </div>
+            <div class="content">
+              <h3>Strawberry Whipped cake</h3>
+              <p>our Strawberry Shortcake are so special because they
+                are whipped with thyme and wipped cream which gives it a very
+                sweet and perfect flavour.
+              </p>
+              <a href="#blogs" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="./jeswin-thomas-ilP7bOvodUQ-unsplash_1.jpg" alt="">
+            </div>
+            <div class="content">
+              <h3>Vanilla Bucket Cream cake</h3>
+              <p>our vanilla bucket cream cake are so special because they
+                are whipped with wipped cream which accentuates it with a 
+                very sweet and unique flavour.
+              </p>
+              <a href="#blogs" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- blog section ends here -->
+
+    <!-- newsletter section starts here-->
+    
+    <section id="contact" class="newsletter">
+      <form action="">
+        <h3>Subscribe for latest update</h3>
+        <input type="email" name=""placeholder="enter your email" id="" class="box">
+        <input type="button" value="Subscribe" class="box2">
+      </form>
+    </section>
+
+    <!-- newsletter section ends here-->
+
+    <!-- review section starts here-->
+
+    <section class="review" id="review">
+      <div class="heading">
+        <h2>Our Customers Review</h2>
+      </div>
+
+      <div class="swiper review-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>Everything cake is a cake brand that makes me keep 
+                coming back for more, i'm always excited to eat their cake.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="./model-4713906__480.jpg" alt="">
+              </div>
+              <div class="clientName">
+                <h2>Ashley</h2>
+                <p>Fashion Model</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>Everything cake is a cake brand that makes me keep 
+                coming back for more, i'm always excited to eat their cake.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="./portrait-smiling-african-american-teen-boy-cute-face-young-black-man_8119-2157.jpg" alt="">
+              </div>
+              <div class="clientName">
+                <h2>Damien</h2>
+                <p>Mathematician</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>Everything cake is a cake brand that makes me keep 
+                coming back for more, i'm always excited to eat their cake.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="./8-Things-About-Being-a-Black-Woman-That-My-Mother-Never-Told-Me-1.jpg" alt="">
+              </div>
+              <div class="clientName">
+                <h2>Scarlet</h2>
+                <p>Food Vlogger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>  
+      </div>
+    </section>
+
+    <!-- review section ends here-->
+
+    <!-- footer section starts here-->
+
+    <section class="footer" id="footer">
+      <div class="content">
+        <a class="navbar-brand" href="./index.html">
+          <i class="fa-solid fa-cake-candles"></i>
+          Everything Cake
+        </a>
+        <p>The brand that gives you nothing but the best.</p>
+        <a class="girlintech" href="#">All rights reserved || Designed by Girlintech</a>
+      </div>
+    </section>
+
+    <!-- footer section ends here-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+
+    <script>
+      var swiper = new Swiper(".product-row", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay:{
+          delay: 9500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".blogs-row", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay:{
+          delay: 9500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".review-row", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay:{
+          delay: 9500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+</body>
+</html>
